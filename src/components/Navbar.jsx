@@ -5,9 +5,9 @@ import { Icon } from "@iconify/react";
 const Navbar = () => {
   return (
     <>
-      <div className="fixed w-full">
+      <div className="fixed w-full z-100">
         <div className="w-full bg-(--color-crema) py-1">
-          <span className="text-center w-full inline-block animate-marquee">Lorem ipsum dolor sit amet consectetur. &nbsp;&nbsp;&nbsp;</span>
+          <span className="text-center w-full inline-block animate-marquee">Esta es una página para ver información de las peliculas de Studio Ghibli &nbsp;&nbsp;&nbsp;</span>
         </div>
         <nav className="flex justify-between gap-6 p-2 pr-7 pl-3 mt-2 h-20 items-center bg-(--color-azul) text-white m-5 rounded-full">
           <Link to="/">
@@ -15,7 +15,7 @@ const Navbar = () => {
               <img
                 src={Logo}
                 alt="Logo Studio Ghibli"
-                className="w-16 h-16 rounded-full object-cover object-center"
+                className="w-16 h-16 rounded-full object-cover object-center border-2 border-(--color-terracota)"
               />
             </div>
           </Link>

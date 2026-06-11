@@ -9,7 +9,7 @@
     /* Fuente */
     --font-poppins: Poppins, sans-serif;
 
-    --animate-marquee: marquee 15s linear infinite;
+    --animate-marquee: marquee 18s linear infinite;
 }
 
 @keyframes marquee {
@@ -20,4 +20,8 @@
     100% {
         transform: translateX(-100%);
     }
+}
+
+body {
+    font-family: var(--font-poppins);
 }
