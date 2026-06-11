@@ -12,14 +12,16 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/sobre_nosotros" element={<About/>}/>
-        <Route path="/peliculas" element={<Movies/>}/>
-      </Routes>
-      <footer>
-        <Footer />
-      </footer>
+      <div className="flex flex-col flex-1 pt-[140px]">
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/sobre_nosotros" element={<About/>}/>
+            <Route path="/peliculas" element={<Movies/>}/>
+          </Routes>
+        </main>
+          <Footer />
+      </div>
     </>
   );
 }
