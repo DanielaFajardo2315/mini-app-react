@@ -9,7 +9,7 @@ const Movies = () => {
 
   return (
     <>      
-      <div className="flex gap-5 flex-wrap justify-center mb-5">
+      <section className="flex gap-5 flex-wrap justify-center mb-5">
         {movies.map((item) => (
           <Card
             hoverable
@@ -28,7 +28,7 @@ const Movies = () => {
             <p><strong>Release Date: </strong>{item.release_date}</p>
           </Card>
         ))}
-      </div>
+      </section>
     </>
   );
 };
