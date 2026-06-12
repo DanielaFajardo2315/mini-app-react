@@ -50,6 +50,16 @@ const Navbar = () => {
             >
               Peliculas
             </NavLink>
+            <NavLink
+              to="/inicio_sesion"
+              className={({ isActive }) =>
+                isActive
+                  ? "underline decoration-(--color-terracota) text-(--color-terracota)"
+                  : ""
+              }
+            >
+              Inicio de Sesión
+            </NavLink>
           </div>
         </nav>
       </div>
